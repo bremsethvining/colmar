@@ -24,15 +24,15 @@ header {
   width: auto;
 }
 
-.logo h2 {
+.logo h3 {
   font-size: 1.25rem;
 }
 
-h2 .bold {
+h3 .bold {
   font-weight: 900;
 }
 
-h2 .thin {
+h3 .thin {
   font-weight: 300;
 }
 
@@ -82,7 +82,7 @@ h1 {
   max-width: 80%;
 }
 
-h3 {
+h4 {
   margin: 1rem 1rem 1rem 0;
   line-height: 1.5;
   font-size: 1.25rem;
@@ -97,4 +97,116 @@ h3 {
   text-align: center;
   padding: 8px 0;
   margin: 1rem 1rem 1rem 0;
+}
+
+/*Main information*/
+.main_information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left_column {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 32px 24px;
+}
+
+.main_information .left_column .img_container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.main_information .left_column .img_container img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 750;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.left_column p {
+  margin-bottom: 32px;
+}
+
+#start {
+  justify-content: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right_column .img_container {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  margin: 16px;
+}
+
+.right_column .img_container img {
+  width: 100%;
+  height: auto;
+}
+
+.sub_column {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+
+/*Course List Section*/
+
+.course_list {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.course {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.course .img_container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.course .img_container img {
+  width: 100%;
+  height: 100%;
 }

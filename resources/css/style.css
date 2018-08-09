@@ -68,7 +68,7 @@ nav span {
 .right_column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 40%;
   height: 50%;
@@ -103,7 +103,7 @@ h4 {
 .main_information {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -154,7 +154,7 @@ h2 {
   width: 35%;
   height: auto;
   overflow: hidden;
-  margin: 16px;
+  margin: 32px 16px 16px 16px;
 }
 
 .right_column .img_container img {
@@ -198,26 +198,29 @@ h2 {
   width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: stretch;
   margin: 0px 32px 32px 0;
 }
 
 .course .sub_column {
   width: 100%;
   background-color: white;
+
 }
 
 .course .img_container {
   width: 100%;
   height: auto;
   overflow: hidden;
+  margin: 0;
 }
 
 .course .img_container img {
   width: 100%;
   height: 100%;
 }
+
+
 
 /*Thesis exhibit section*/
 .exhibit {
@@ -231,6 +234,8 @@ h2 {
 .exhibit .banner {
   background-color: white;
   margin: 0 0;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .exhibit .banner .left_column {
@@ -247,4 +252,18 @@ h2 {
 .banner .left_column .img_container video {
   width: 100%;
   height: 100%;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  border-top: 2px solid grey;
+}
+
+footer p {
+  margin: 24px;
 }

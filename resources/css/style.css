@@ -9,6 +9,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
   height: 64px;
 }
 
@@ -40,8 +41,12 @@ nav {
   margin-right: 24px;
 }
 
-nav span {
+nav span.desktop {
   margin-left: 16px;
+}
+
+nav span.mobile {
+  display: none;
 }
 
 /*Banner*/
@@ -82,7 +87,7 @@ h1 {
   max-width: 80%;
 }
 
-h4 {
+.banner .right_column h4 {
   margin: 1rem 1rem 1rem 0;
   line-height: 1.5;
   font-size: 1.25rem;
@@ -169,7 +174,16 @@ h2 {
   justify-content: flex-start;
   align-items: flex-start;
   line-height: 1.2;
+  margin: 10px;
 }
+
+.sub_column h4 {
+  margin: 5px 0px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 
 
 /*Course List Section*/
@@ -189,8 +203,6 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  align-content: center;
   margin: 32px 40px 32px 72px;
 }
 
@@ -198,13 +210,13 @@ h2 {
   width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: flex-start;
   margin: 0px 32px 32px 0;
+  background-color: white;
 }
 
 .course .sub_column {
   width: 100%;
-  background-color: white;
 
 }
 
@@ -254,6 +266,19 @@ h2 {
   height: 100%;
 }
 
+.banner .left_column h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.right_column .sub_column h4 {
+  margin: 5px 0px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 /*Footer*/
 footer {
   display: flex;
@@ -266,4 +291,44 @@ footer {
 
 footer p {
   margin: 24px;
+}
+
+
+/*Media Query for Mobile Site*/
+@media only screen and (max-width:609px) {
+
+  /*header*/
+  nav span.desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  nav span.mobile {
+    display: inline-block;
+  }
+
+  /*banner*/
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner .img_container {
+    width: 100%;
+  }
+
+  .banner .right_column {
+    width: 100%;
+  }
+
 }

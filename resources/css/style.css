@@ -400,12 +400,14 @@ footer p {
 
   .course_list {
     background-color: white;
+    padding: 16px;
   }
 
   .courses {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
   }
@@ -413,7 +415,13 @@ footer p {
   .course {
     align-items: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0 0 0;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+  }
+
+  .course .img_container {
+    display: none;
   }
 
   .course img {
@@ -421,9 +429,8 @@ footer p {
   }
 
   .course .sub_column {
-    text-align: center;
-    align-items: center;
-    margin: 16px;
+    align-items: flex-start;
+    margin: 0;
   }
 
   .course .sub_column p {
@@ -431,11 +438,48 @@ footer p {
   }
 
   .course .sub_column h4 {
-    width: 100%;
-    background-color: lightgrey;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 25px;
+    margin-left: 16px;
   }
+
+  /*Thesis exhibit section*/
+  .exhibit {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .exhibit .banner {
+    width: 100%;
+  }
+
+ .exhibit .banner .left_column {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .exhibit .left_column h4 {
+    display: none;
+  }
+
+  .exhibit .left_column p {
+    display: none;
+  }
+
+  .exhibit .right_column {
+    display: none;
+  }
+
+/*footer*/
+
+footer p {
+  display: none;
+}
+
+footer p#copyright {
+  display: block;
+}
+
 
 
 

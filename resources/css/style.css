@@ -13,6 +13,11 @@ header {
   height: 64px;
 }
 
+p {
+  color: grey;
+  line-height: 1.5;
+}
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -173,15 +178,24 @@ h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
   line-height: 1.2;
   margin: 10px;
 }
 
 .sub_column h4 {
-  margin: 5px 0px;
+  margin-bottom: 8px;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1;
+}
+
+.sub_column p {
+  margin-bottom: 8px;
+}
+
+.sub_column a {
+  text-decoration: none;
 }
 
 img.mobile {
@@ -205,22 +219,46 @@ img.mobile {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 32px 40px 32px 72px;
+  margin: 32px 72px 32px 72px;
 }
 
-.course {
+.course_wrapper {
+  margin: 0px 32px 32px 0px;
   width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0px 32px 32px 0;
   background-color: white;
 }
 
-.course .sub_column {
+.course {
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: white;
 }
+
+.course .course_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  padding: 16px;
+}
+
+.course .course_description h4 {
+  margin: 16px 10px 16px 10px;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.course .course_description p {
+  margin: 8px 10px 8px 10px;
+  display: inline-block;
+  font-size: 1rem;
+}
+
 
 .course .img_container {
   width: 100%;
@@ -275,7 +313,7 @@ img.mobile {
 }
 
 .right_column .sub_column h4 {
-  margin: 5px 0px;
+  margin: 16px 0px;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1;
@@ -293,6 +331,10 @@ footer {
 
 footer p {
   margin: 24px;
+}
+
+footer span {
+  margin-right: 12px;
 }
 
 

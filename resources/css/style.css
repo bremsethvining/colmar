@@ -437,6 +437,10 @@ footer span {
     margin-left: 16px;
   }
 
+  .row .sub_column a {
+    margin-left: 16px;
+  }
+
 
 /*Courses section*/
 
@@ -452,6 +456,12 @@ footer span {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .course_wrapper {
+    width: 100%;
+    align-items: center;
+    margin: 0 0 0 0;
   }
 
   .course {
@@ -470,16 +480,16 @@ footer span {
     display: none;
   }
 
-  .course .sub_column {
+  .course .course_description {
     align-items: flex-start;
     margin: 0;
   }
 
-  .course .sub_column p {
+  .course .course_description p {
     display: none;
   }
 
-  .course .sub_column h4 {
+  .course .course_description h4 {
     margin-top: 16px;
     margin-bottom: 25px;
     margin-left: 16px;
